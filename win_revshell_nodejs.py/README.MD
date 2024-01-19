@@ -5,7 +5,7 @@ To be able to receive a reverse shell, the user must have BUILD and JOB CREATION
 Once logged in on Jenkins, the script creates a new **"Freestyle project"** JOB.\
 ![win_revshell_nodejs_1](https://github.com/stevenvegar/Jenkins_scripts/blob/main/win_revshell_nodejs.py/images/win_revshell_nodejs_1.png)
 
-Then configures or BUILD it to "Execute NodeJS script" with the **Powershell** payload.\
+Then configures or BUILD it to **"Execute NodeJS script"** with the **Powershell** payload.\
 ![win_revshell_nodejs_2](https://github.com/stevenvegar/Jenkins_scripts/blob/main/win_revshell_nodejs.py/images/win_revshell_nodejs_2.png)
 
 Finally, the script sends the instruction to execute this JOB.
