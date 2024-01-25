@@ -8,7 +8,8 @@ This script can enumerate 26 different URLs and check if the user can access the
 If no user is especified, it will try perform authentication as the anonymous user.
 
 ### [enum_users.py](enum_users.py)
-This can be used to perform a dictionary attack to obtain possible usernames.
+This can be used to perform a dictionary attack to obtain possible usernames.\
+Either if Jenkins is configured to use local user database or Active Directory.
 
 ## Reverse shells
 These scripts are ported from a Metasploit exploit written in Ruby.\
