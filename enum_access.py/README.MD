@@ -27,8 +27,13 @@ In this scheme, you can configure who can do what by using a big table. Each col
 **- Project-based Matrix Authorization Strategy**\
 This mode is an extension to "Matrix-based security" that allows additional ACL matrix to be defined for each project separately.\
 
+This is the Jenkins security options when it is installed on different OS:\
+![global_security](https://github.com/stevenvegar/Jenkins_scripts/blob/main/enum_access.py/images/global_security.png)
 
+This is the Matrix-based security mechanism, any account can be configured with granular access:\
+![matrix_authorization](https://github.com/stevenvegar/Jenkins_scripts/blob/main/enum_access.py/images/matrix_authorization.png)
 
+The script performs web requests to this URL list and can determine if the especified user have access to it or not:\
 1. http://jenkins.local/
 2. http://jenkins.local//crumbIssuer/api/json
 3. http://jenkins.local/newJob
