@@ -33,7 +33,7 @@ This is the Jenkins security options when it is installed on different OS:\
 This is the Matrix-based security mechanism, any account can be configured with granular access:\
 ![matrix_authorization](https://github.com/stevenvegar/Jenkins_scripts/blob/main/enum_access.py/images/matrix_authorization.png)
 
-The script performs web requests to this URL list and can determine if the especified user have access to it or not:\
+The script performs web requests to this URL list and can determine if the especified user have access to it or not:
 1. http://jenkins.local/
 2. http://jenkins.local//crumbIssuer/api/json
 3. http://jenkins.local/newJob
@@ -60,3 +60,8 @@ The script performs web requests to this URL list and can determine if the espec
 24. http://jenkins.local/securityRealm/
 25. http://jenkins.local/ad-health/
 26. http://jenkins.local/whoAmI/
+
+Usage:\
+python3 ./enum_access.py -w URL
+![enum_access_1](https://github.com/stevenvegar/Jenkins_scripts/blob/main/enum_access.py/images/enum_access_1.png)
+![enum_access_2](https://github.com/stevenvegar/Jenkins_scripts/blob/main/enum_access.py/images/enum_access_2.png)
