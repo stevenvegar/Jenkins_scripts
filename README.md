@@ -7,6 +7,9 @@ Some scripts to enumerate and attack Jenkins servers
 This script can enumerate 26 different URLs and check if the user can access them.\
 If no user is especified, it will try perform authentication as the anonymous user.
 
+### [enum_users.py](enum_users.py)
+This can be used to perform a dictionary attack to obtain possible usernames.
+
 ## Reverse shells
 These scripts are ported from a Metasploit exploit written in Ruby.\
 [Jenkins 2.150.2 - Remote Command Execution (Metasploit)](https://www.exploit-db.com/exploits/46352)
