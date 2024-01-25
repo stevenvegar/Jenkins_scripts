@@ -9,7 +9,7 @@ python3 ./enum_users.py -w URL
 ![enum_users_1.png](https://github.com/stevenvegar/Jenkins_scripts/blob/main/enum_users.py/images/enum_users_1.png)
 
 First, the script check if the anonymous user can display the list of local users and/or the known Jenkins users whom logged in at least once.\
-http://jenkins.local/asynchPeople/
+http://jenkins.local/asynchPeople/\
 http://jenkins.local/SecurityRealm/
 ![enum_users_6.png](https://github.com/stevenvegar/Jenkins_scripts/blob/main/enum_users.py/images/enum_users_6.png)
 ![enum_users_7.png](https://github.com/stevenvegar/Jenkins_scripts/blob/main/enum_users.py/images/enum_users_7.png)
