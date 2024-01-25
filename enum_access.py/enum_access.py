@@ -9,7 +9,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 
 def parse_args():
-	parser = argparse.ArgumentParser(description='Bash reverse shell from Jenkins on a Linux-based server using batch command')
+	parser = argparse.ArgumentParser(description='This script can enumerate 26 different URLs and check if the user can access them.')
 	parser.add_argument('-w', '--website', type=str, required=True, help='Required. Jenkins website URL')
 	parser.add_argument('-wp', '--webport', type=int, help='Jenkins website port (default: 8080)')
 	parser.add_argument('-u','--username', type=str, help='Jenkins username (default: anonymous)')
