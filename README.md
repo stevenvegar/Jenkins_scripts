@@ -37,3 +37,10 @@ This script use the **"Execute NodeJS script"** job type.
 ### [linux_revshell_groovy.py](linux_revshell_groovy.py/)
 Get a Bash reverse shell from Linux-based Jenkins server using a **Groovy script** payload.\
 This script use a **"Pipeline script"** job type.
+
+
+## External resources
+[HackTricks - Boitatech](https://hacktricks.boitatech.com.br/pentesting/pentesting-web/jenkins)\
+[Github - Carlos Polop](https://github.com/carlospolop/hacktricks-cloud/tree/master/pentesting-ci-cd/jenkins-security)\
+[Github - Jenkins Attack Framework](https://github.com/Accenture/jenkins-attack-framework)\
+[Github - Pwn-Jenkins](https://github.com/gquere/pwn_jenkins)
