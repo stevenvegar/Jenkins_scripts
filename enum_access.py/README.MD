@@ -25,7 +25,9 @@ Every logged-in user gets full control of Jenkins. The only user who won't have 
 **- Matrix-based security**\
 In this scheme, you can configure who can do what by using a big table. Each column represents a permission. Each row represents a user or a group. "Matrix Authorization Strategy" plugin must be installed.\
 **- Project-based Matrix Authorization Strategy**\
-This mode is an extension to "Matrix-based security" that allows additional ACL matrix to be defined for each project separately.\
+This mode is an extension to "Matrix-based security" that allows additional ACL matrix to be defined for each project separately.
+
+In Jenkins, there are two anonymous authentication profiles. The default profile is granted Overall/Read permission, and it can be disabled by unchecking the 'Allow anonymous read access' option in the 'Configure Global Security' settings. When this option is disabled, the anonymous user is still used by default in Jenkins when no other user is specified, but with very limited access.
 
 This is the Jenkins security options when it is installed on different OS:\
 ![global_security](https://github.com/stevenvegar/Jenkins_scripts/blob/main/enum_access.py/images/global_security.png)
