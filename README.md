@@ -20,7 +20,7 @@ Works on Jenkins installed on Windows.
 
 ### [init_pass_CVE-2024-23897.py](win_init_pass_CVE-2024-23897.py/)
 This script can retrieve the initialAdminPassword which is used when Jenkins is installed.\
-The password should work to login, if it is was not changed after installation.\
+If Admin user were not deleted and initial password not changed, this should work to login as admin.\
 Anonymous Overall/Read permissions are not necessary.
 
 ### [rce_CVE-2024-23897.py](rce_CVE-2024-23897.py/)
