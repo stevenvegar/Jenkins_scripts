@@ -27,8 +27,12 @@ Anonymous Overall/Read permissions are not necessary.
 This script search for user's credentials and execute a Groovy script with the desired OS command.\
 Anonymous Overall/Read permissions are necessary.
 
-### [revshell_CVE-2024-23897.py](revshell_CVE-2024-23897.py)
+### [revshell_CVE-2024-23897.py](revshell_CVE-2024-23897.py/)
 This script search for user's credentials and create a JOB to execute a reverse shell.\
+Anonymous Overall/Read permissions are necessary.
+
+### [users_creds_CVE-2024-23897.py](users_creds_CVE-2024-23897.py/)
+This script search for user's credentials and extract them to perform offline password cracking.\
 Anonymous Overall/Read permissions are necessary.
 
 ## Reverse shells
