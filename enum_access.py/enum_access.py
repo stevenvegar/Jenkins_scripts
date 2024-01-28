@@ -9,7 +9,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 
 def parse_args():
-	parser = argparse.ArgumentParser(description='This script can enumerate 26 different URLs and check if the user can access them.')
+	parser = argparse.ArgumentParser(description='Bash reverse shell from Jenkins on a Linux-based server using batch command')
 	parser.add_argument('-w', '--website', type=str, required=True, help='Required. Jenkins website URL')
 	parser.add_argument('-wp', '--webport', type=int, help='Jenkins website port (default: 8080)')
 	parser.add_argument('-u','--username', type=str, help='Jenkins username (default: anonymous)')
@@ -165,6 +165,9 @@ def main():
 			print (f"   [>] {WEBSITE}/instance-identity/")
 		elif s.status_code == 403:
 			print ("[-] 11. Can the user view Instance Identity? NO !")
+		elif s.status_code == 404:
+			print ("[-] 11. Can the user view Instance Identity? NO !")
+			print ("   [x] Credentials plugin not installed")
 	except:
 		print ("[-] Error: Can not connect to Jenkins server. Check URL and port.")
 		exit()
@@ -253,6 +256,9 @@ def main():
 			print (f"   [>] {WEBSITE}/credentials/")
 		elif s.status_code == 403:
 			print ("[-] 19. Can the user view Credentials? NO !")
+		elif s.status_code == 404:
+			print ("[-] 19. Can the user view Credentials? NO !")
+			print ("   [x] Credentials plugin not installed")
 	except:
 		print ("[-] Error: Can not connect to Jenkins server. Check URL and port.")
 		exit()
@@ -264,6 +270,9 @@ def main():
 			print (f"   [>] {WEBSITE}/credentials/store/system/domain/_/")
 		elif s.status_code == 403:
 			print ("[-] 20. Can the user view Global credentials (unrestricted)? NO !")
+		elif s.status_code == 404:
+			print ("[-] 20. Can the user view Global credentials (unrestricted)? NO !")
+			print ("   [x] Credentials plugin not installed")
 	except:
 		print ("[-] Error: Can not connect to Jenkins server. Check URL and port.")
 		exit()
@@ -366,6 +375,11 @@ def main():
 	except:
 		print ("[-] Error: Can not connect to Jenkins server. Check URL and port.")
 		exit()
+
+
+
+#/plugin/email-ext
+
 
 
 if __name__ == "__main__":
