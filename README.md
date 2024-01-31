@@ -12,11 +12,12 @@ This can be used to perform a dictionary attack to obtain possible usernames.\
 Either if Jenkins is configured to use local user database or Active Directory.
 
 ## CVE-2024-23897
+These scripts takes the advantage of CVE-2024-23897 vulnerability, which allows an unauthenticated user (anonymous) to read local files stored in the server. This a "Local File Inclusion (LFI)" vulnerability.
 
-### [win_creds_CVE-2024-23897.py](win_creds_CVE-2024-23897.py/)
+### [get_creds_CVE-2024-23897.py](get_creds_CVE-2024-23897.py/)
 This script can download hudson.util.Secret and master.key without Anonymous Overall/Read permissions.\
 If access is available, also retrieve credentials from the credentials.xml file and decrypt the passwords.\
-Works on Jenkins installed on Windows.
+Works on Jenkins installed on Windows and with Java 17 or 11. On Java 21 or Linux, certain configuration is needed.
 
 ### [init_pass_CVE-2024-23897.py](win_init_pass_CVE-2024-23897.py/)
 This script can retrieve the initialAdminPassword which is used when Jenkins is installed.\
